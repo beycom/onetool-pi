@@ -19,7 +19,7 @@
   "homepage": "https://github.com/beycom/onetool-pi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/beycom/onetool-pi.git"
+    "url": "git+https://github.com/beycom/onetool-pi.git"
   },
   "bugs": {
     "url": "https://github.com/beycom/onetool-pi/issues"

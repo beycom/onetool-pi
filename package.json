@@ -1,10 +1,11 @@
 {
   "name": "onetool-pi",
   "version": "1.0.0",
-  "description": "Pi coding agent extension — bridges Pi and onetool's 100+ tools via a single `ot` tool",
+  "description": "🧿 Pi coding agent extension — the ultimate MCP bridge with 100+ tools including Brave, Google, Context7, Excalidraw, AWS, Excel, File Ops, Database, Playwright, Chrome DevTools and many more",
   "keywords": [
     "pi-package",
     "pi",
+    "pi-extension",
     "mcp",
     "model-context-protocol",
     "ai",
@@ -12,11 +13,22 @@
     "extension",
     "claude",
     "llm",
-    "onetool"
+    "onetool",
+    "brave-search",
+    "google-search",
+    "aws",
+    "excalidraw",
+    "playwright",
+    "database",
+    "context7",
+    "aws",
+    "excel"
+    "tools",
+    "automation"
   ],
   "license": "GPL-3.0",
   "author": "Gavin Las <beycom99@gmail.com>",
-  "homepage": "https://github.com/beycom/onetool-pi",
+  "homepage": "https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beycom/onetool-pi.git"
@@ -30,7 +42,9 @@
   "type": "module",
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE.txt",
+    "NOTICE.txt"
   ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -43,7 +57,8 @@
   "pi": {
     "extensions": [
       "./dist/index.js"
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/beycom/onetool-pi/main/docs/assests/banner.png"
   },
   "scripts": {
     "build": "tsc",

@@ -1,31 +1,39 @@
 # onetool-pi
 
-Pi coding agent extension that bridges Pi and [onetool](https://github.com/beycom/onetool-mcp)'s 100+ tools via a single `ot` tool.
+🧿 [Pi](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent) coding agent extension — the ultimate MCP bridge with 100+ tools including Brave, Google, Context7, Excalidraw, AWS, Version Checker, Excel, File Ops, Database, Playwright, Chrome DevTools and many more.
+
+[![npm](https://img.shields.io/npm/v/onetool-pi?label=npm)](https://www.npmjs.com/package/onetool-pi)
+[![license](https://img.shields.io/npm/l/onetool-pi)](./LICENSE.txt)
+[![node](https://img.shields.io/node/v/onetool-pi)](https://nodejs.org)
 
 ## Prerequisites
 
 - [onetool](https://github.com/beycom/onetool-mcp) installed and configured (`onetool init`)
-- Pi coding agent (`@mariozechner/pi-coding-agent`)
+- [Pi](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent) coding agent (`@mariozechner/pi-coding-agent`)
 
 ## Installation
 
 ```bash
-npm pack
-pi install-extension onetool-pi-*.tgz
+pi install npm:onetool-pi
 ```
 
 ## Configuration
 
-Add an `onetool` block to `.pi/settings.json` (project) or `~/.pi/agent/settings.json` (global):
+Add an `onetool` block to `.pi/settings.json` (project) or `~/.pi/settings.json` (global):
 
 ```json
 {
   "onetool": {
     "command": "onetool",
-    "args": ["serve"]
+    "args": [
+      "--config", "~/.onetool/onetool.yaml",
+      "--secrets", "~/.onetool/secrets.yaml"
+    ]
   }
 }
 ```
+
+> Replace `~/.onetool/onetool.yaml` and `~/.onetool/secrets.yaml` with the paths to your own onetool config and secrets files.
 
 Project settings take priority over global settings.
 

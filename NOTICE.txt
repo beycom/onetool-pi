@@ -1,0 +1,15 @@
+onetool-pi
+Copyright 2024-present, OneTool Authors
+
+This product includes software developed by third parties.
+
+================================================================================
+@modelcontextprotocol/sdk
+================================================================================
+Copyright (c) 2024 Anthropic, PBC
+Licensed under the MIT License
+https://github.com/modelcontextprotocol/typescript-sdk
+
+Used in: src/ (MCP client transport)
+
+================================================================================

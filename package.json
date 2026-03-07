@@ -1,14 +1,31 @@
 {
   "name": "onetool-pi",
-  "version": "2.1.0",
+  "version": "1.0.0",
   "description": "Pi coding agent extension — bridges Pi and onetool's 100+ tools via a single `ot` tool",
-  "keywords": ["pi", "onetool", "mcp", "extension", "ai", "coding-agent", "model-context-protocol", "agents"],
+  "keywords": [
+    "pi-package",
+    "pi",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "coding-agent",
+    "extension",
+    "claude",
+    "llm",
+    "onetool"
+  ],
   "license": "GPL-3.0",
   "author": "Gavin Las <beycom99@gmail.com>",
-  "homepage": "https://github.com/beycom/onetool-mcp",
+  "homepage": "https://github.com/beycom/onetool-pi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/beycom/onetool-mcp"
+    "url": "https://github.com/beycom/onetool-pi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beycom/onetool-pi/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   },
   "type": "module",
   "files": [
@@ -33,7 +50,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run --reporter=verbose",
     "test:e2e": "ONETOOL_E2E=1 vitest run --reporter=verbose",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.27.1"

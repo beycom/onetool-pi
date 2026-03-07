@@ -1,0 +1,90 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Dependencies
+node_modules/
+bower_components/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+out/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+**/secrets.yaml
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE specific
+.vs/
+.vscode/settings.json
+.fleet/
+
+# Secrets and credentials
+*.pem
+*.key
+*.cert
+secrets/
+credentials/
+
+# Project
+docs/_wip/
+scratch/
+diagrams/
+msg/
+plan/
+wip/
+openspec/changes/
+openspec/consult/
+
+# AI tool directories
+# AI coding agent directories (local state, not shared)
+.claude/
+.opencode/
+.codex/
+.pi/
+.mcp.json
+opencode.json

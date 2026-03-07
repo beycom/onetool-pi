@@ -1,0 +1,52 @@
+{
+  "name": "onetool-pi",
+  "version": "2.1.0",
+  "description": "Pi coding agent extension — bridges Pi and onetool's 100+ tools via a single `ot` tool",
+  "keywords": ["pi", "onetool", "mcp", "extension", "ai", "coding-agent", "model-context-protocol", "agents"],
+  "license": "GPL-3.0",
+  "author": "Gavin Las <beycom99@gmail.com>",
+  "homepage": "https://github.com/beycom/onetool-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beycom/onetool-mcp"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "pi": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --reporter=verbose",
+    "test:e2e": "ONETOOL_E2E=1 vitest run --reporter=verbose",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@sinclair/typebox": "*"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@sinclair/typebox": "*",
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.0"
+  }
+}

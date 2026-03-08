@@ -1,6 +1,8 @@
 # onetool-pi
 
-🧿 [Pi](https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent) coding agent extension — the ultimate MCP bridge with 100+ tools including Brave, Google, Context7, Excalidraw, AWS, Version Checker, Excel, File Ops, Database, Playwright, Chrome DevTools and many more.
+![onetool-pi banner](https://raw.githubusercontent.com/beycom/onetool-pi/main/docs/assests/banner.png)
+
+🧿 Pi coding agent extension — the ultimate MCP bridge with 100+ tools including Brave, Google, Context7, Excalidraw, AWS, Version Checker, Excel, File Ops, Database, Playwright, Chrome DevTools and many more.
 
 [![npm](https://img.shields.io/npm/v/onetool-pi?label=npm)](https://www.npmjs.com/package/onetool-pi)
 [![license](https://img.shields.io/npm/l/onetool-pi)](./LICENSE.txt)
@@ -46,7 +48,10 @@ Project settings take priority over global settings.
 | `maxLines` | (onetool default) | Truncate output at this many lines |
 | `previewLines` | `10` | Lines shown before "click to expand" |
 
+
 ## Usage
+
+For full documentation and available packs, visit [onetool.beycom.online](https://onetool.beycom.online/).
 
 Once installed, the `ot` tool is available in Pi:
 

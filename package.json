@@ -28,7 +28,7 @@
   ],
   "license": "GPL-3.0",
   "author": "Gavin Las <beycom99@gmail.com>",
-  "homepage": "https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent",
+  "homepage": "https://github.com/beycom/onetool-pi",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beycom/onetool-pi.git"

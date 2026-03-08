@@ -45,6 +45,9 @@ release-delete version:
     git push origin --delete "v{{ version }}" || true
     git tag -d "v{{ version }}" || true
 
+npm-login:
+    npm login
+
 build:
     npm run build
 
